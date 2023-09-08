@@ -58,7 +58,7 @@ p {
 }
 
 .spacer {
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 .txt-spacer {
@@ -226,19 +226,11 @@ footer hr {
 
 /* Discover IDP Section */
 
-#discover-section {
-    background-color: white;
-    color: #171717;
-}
-
 #discover-heading {
     background-color: #952322;
     width: 60%;
-    border-radius: 30px;
-}
-
-#discover-heading img {
-    border-radius: 30px;
+    border-radius: 40px;
+    position: relative;
 }
 
 #discover-heading-text {
@@ -254,15 +246,46 @@ footer hr {
     font-size: 20px;
 }
 
+#discover-content {
+    background-color: white;
+    color: #171717;
+    border-radius: 40px;
+    width: 80%;
+    z-index: 9;
+    margin-top: -150px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+#discover-content .button-style {
+    border-color: #952322;
+    color: #952322
+}
+
+#discover-content .button-style:hover {
+    background-color: #952322;
+    border-color: white;
+    color: white;
+}
+
+#discover-gallery .heading {
+    color: #952322;
+}
+
 /* Testimonials Section */
 
 #testimonials-section img {
-    border-radius: 30px;
+    border-radius: 40px;
 }
 
 #testimonials-text {
     margin-top: auto;
     margin-bottom: auto;
+    font-size: 20px;
+}
+
+#testimonials-text p {
+    font-size: 18px;
 }
 
 #folders {
@@ -274,8 +297,8 @@ footer hr {
 }
 
 #folders p {
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 /* ---End of Home Page Styles--- */
