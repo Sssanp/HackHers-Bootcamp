@@ -2,7 +2,21 @@
     CSS Guide 
 
     1.  General Styles
+    2.  Header Styles
+    3.  Footer Styles
+    4.  Home Page Styles
 */
+
+
+@font-face {
+    font-family: 'Hanson-Bold';
+    src: url("../fonts/Hanson-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Karrera-Regular';
+    src: url("../fonts/Karrera-Regular.otf") format("opentype");
+}
 
 
 /* 1. ---General Styles--- */
@@ -51,9 +65,217 @@ p {
     margin-top: 25px;
 }
 
+.heading {
+    font-family: 'Hanson-Bold';
+}
+
+.heading-alt {
+    font-family: 'Hanson-Bold';
+    color: #171717;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    letter-spacing: 3px;
+}
+
+.sub-heading {
+    font-family: 'Karrera-Regular';
+}
+
+.button-style {
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 16px 32px;
+    padding-top: 10px;
+    font-size: 18px;
+    width: 165px;
+    font-family: 'Karrera-Regular';
+}
+
+.button-style:hover {
+    border-color: #404041;
+    background-color: white;
+    color: #171717;
+    cursor: pointer;
+}
+
 /* ---End of General Styles--- */
+
+
+/* 2. ---Header Styles--- */
+
+header .logo {
+    width: 25%;
+}
+
+.main-nav {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Karrera-Regular';
+}
+
+.main-nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.main-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.main-nav ul li:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+/* ---End of Header Styles--- */
+
+
+/* 3. ---Footer Styles--- */
+
+footer {
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#footer-text span {
+    font-size: 15px;
+}
+
+#footer-nav ul li {
+    list-style-type: none;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+#footer-nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer-heading {
+    color: #952322;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Hanson-Bold';
+}
+
+#socials ul li {
+    display: inline;
+    margin-right: 15px;
+    font-size: 28px;
+}
+
+#socials ul li:last-child {
+    margin-right: 0;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+}
+
+/* ---End of Footer Styles--- */
+
+
+/* 4. ---Home Page Styles--- */
 
 #home-page-bg {
     background-color: #171717;
     color: white;
+    background-image: url(../images/red-circles-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 140%
 }
+
+/* Hero Section */
+
+#countdown-heading {
+    text-shadow: 2px 5px 5px #952322;
+}
+
+#countdown-sub-heading {
+ color: #FFE2E2;
+}
+
+#timer p {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 70px;
+    font-size: 80px;
+    line-height: 50px;
+}
+
+#timer p span {
+    font-size: 20px;
+    font-family: 'Karrera-Regular';
+}
+
+#timer p:last-child {
+    margin-right: 0;
+}
+
+#countdown-section i {
+    font-size: 300%;
+}
+
+/* Discover IDP Section */
+
+#discover-section {
+    background-color: white;
+    color: #171717;
+}
+
+#discover-heading {
+    background-color: #952322;
+    width: 60%;
+    border-radius: 30px;
+}
+
+#discover-heading img {
+    border-radius: 30px;
+}
+
+#discover-heading-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#discover-heading-text h2 {
+    font-size: 22px;
+}
+
+#discover-heading-text span {
+    font-size: 15px;
+}
+
+/* Testimonials Section */
+
+#testimonials-section img {
+    border-radius: 30px;
+}
+
+#testimonials-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#folders {
+    width: 90%;
+}
+
+#folders img {
+    border-radius: 0;
+}
+
+#folders p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* ---End of Home Page Styles--- */
