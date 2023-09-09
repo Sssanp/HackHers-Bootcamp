@@ -54,7 +54,7 @@ h2 {
 
 p {
     line-height: 2em;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .spacer {
@@ -107,6 +107,38 @@ header .logo {
     width: 100%;
 }
 
+#hamburger-menu {
+    visibility: hidden;
+    background-color: #171717;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#hamburger-menu ul li {
+    list-style: none;
+    line-height: 4em;
+    font-size: 20px;
+}
+
+#hamburger-menu ul li:hover {
+    cursor: pointer;
+}
+
+#hamburger-open {
+    font-size: 30px;
+}
+
+#hamburger-open:hover {
+    cursor: pointer;
+}
+
 .main-nav {
     margin-top: auto;
     margin-bottom: auto;
@@ -120,7 +152,7 @@ header .logo {
     font-size: 20px;
 }
 
-.main-nav ul li:last-child {
+.main-nav ul li:last-of-type {
     margin-right: 0;
 }
 
@@ -129,6 +161,13 @@ header .logo {
     border-bottom: 2px solid white;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+    .main-nav ul li {
+        margin-right: 30px;
+        font-size: 18px;
+    }
 }
 
 /* ---End of Header Styles--- */
@@ -142,17 +181,13 @@ footer {
     padding-bottom: 40px;
 }
 
-#footer-text span {
-    font-size: 15px;
-}
-
-#footer-nav ul li {
+.footer-nav ul li {
     list-style-type: none;
     margin-bottom: 25px;
     font-size: 20px;
 }
 
-#footer-nav ul li:last-child {
+.footer-nav ul li:last-of-type {
     margin-bottom: 0;
 }
 
@@ -163,13 +198,13 @@ footer {
     font-family: 'Hanson-Bold';
 }
 
-#socials ul li {
+.socials ul li {
     display: inline;
     margin-right: 15px;
     font-size: 28px;
 }
 
-#socials ul li:last-child {
+.socials ul li:last-of-type {
     margin-right: 0;
 }
 
@@ -177,6 +212,24 @@ footer hr {
     border: none;
     height: 1px;
     background-color: white;
+}
+
+@media screen and (max-width: 1199px) {
+    .footer-text {
+        font-size: 18px;
+    }
+
+    .footer-heading {
+        font-size: 28px;
+    }
+
+    .footer-nav ul li {
+        font-size: 20px;
+    }
+
+    .socials ul li {
+        font-size: 25px;
+    }
 }
 
 /* ---End of Footer Styles--- */
@@ -195,15 +248,15 @@ footer hr {
 
 /* Hero Section */
 
-#countdown-heading {
+.countdown-heading {
     text-shadow: 2px 5px 5px #952322;
 }
 
-#countdown-sub-heading {
+.countdown-sub-heading {
  color: #FFE2E2;
 }
 
-#timer p {
+.timer p {
     list-style-type: none;
     display: inline-block;
     margin-right: 70px;
@@ -211,42 +264,62 @@ footer hr {
     line-height: 50px;
 }
 
-#timer p span {
+.timer p span {
     font-size: 20px;
     font-family: 'Karrera-Regular';
+    text-shadow: 1px 4px 5px rgba(255, 255, 255, 0.344);
 }
 
-#timer p:last-child {
+.timer p:last-of-type {
     margin-right: 0;
 }
 
-#countdown-section i {
+.countdown-section i {
     font-size: 300%;
+}
+
+@media screen and (max-width: 1199px) {
+    .timer p {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .timer p {
+        margin-right: 0;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+
+    .timer p:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 /* Discover IDP Section */
 
-#discover-heading {
+.discover-heading {
     background-color: #952322;
     width: 60%;
     border-radius: 40px;
     position: relative;
+    justify-items: center;
 }
 
-#discover-heading-text {
+.discover-heading-text {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-#discover-heading-text h2 {
+.discover-heading-text h2 {
     font-size: 40px;
 }
 
-#discover-heading-text span {
+.discover-heading-text span {
     font-size: 20px;
 }
 
-#discover-content {
+.discover-content {
     background-color: white;
     color: #171717;
     border-radius: 40px;
@@ -256,47 +329,96 @@ footer hr {
     padding-top: 170px;
 }
 
-#discover-content .button-style {
+.discover-content .button-style {
     border-color: #952322;
     color: #952322
 }
 
-#discover-content .button-style:hover {
+.discover-content .button-style:hover {
     background-color: #952322;
     border-color: white;
     color: white;
 }
 
-#discover-gallery {
+.discover-gallery {
     overflow: auto;
     white-space: nowrap;
     display: flex;
     justify-content: space-between;
 }
 
-#discover-gallery .heading {
+.discover-gallery .heading {
     color: #952322;
+}
+
+@media screen and (max-width: 1199px) {
+    .discover-heading-text h2 {
+        font-size: 25px;
+    }
+    
+    .discover-heading-text span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .discover-heading-text h2 {
+        font-size: 15px;
+    }
+    
+    .discover-heading-text span {
+        font-size: 10px;
+    }
+
+    .discover-content {
+        width: 100%;
+        margin-top: -90px;
+        padding-top: 110px;
+    }
 }
 
 /* Testimonials Section */
 
-#testimonials-text {
+.testimonials-text {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 20px;
 }
 
-#testimonials-text p {
+.testimonials-text p {
     font-size: 18px;
 }
 
-#folders {
-    width: 80%;
+.folders {
+    width: 70%;
 }
 
-#folders p {
-    font-size: 18px;
+.folders div:hover {
+    cursor: pointer;
+}
+
+.folders p {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+    .folders {
+        width: 80%;
+    }
+
+    .folders p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .folders {
+        width: 80%;
+        overflow: auto;
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* ---End of Home Page Styles--- */
