@@ -251,6 +251,18 @@ footer hr {
     background-size: 140%
 }
 
+@media screen and (max-width: 1199px) {
+    #home-page-bg {
+        background-size: 190%
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #home-page-bg {
+        background-size: 200%
+    }
+}
+
 /* Hero Section */
 
 .countdown-heading {
@@ -258,7 +270,7 @@ footer hr {
 }
 
 .countdown-sub-heading {
- color: #FFE2E2;
+    color: #FFE2E2;
 }
 
 .timer p {
@@ -422,7 +434,14 @@ footer hr {
         overflow: auto;
         white-space: nowrap;
         display: flex;
-        justify-content: space-between;
+    }
+
+    .folders img {
+        margin-right: 100px;
+    }
+
+    .folders p {
+        margin-left: -18px;
     }
 }
 
@@ -438,6 +457,18 @@ footer hr {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 40%
+}
+
+@media screen and (max-width: 1199px) {
+    #about-page-bg {
+        background-size: 60%
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #about-page-bg {
+        background-size: 90%
+    }
 }
 
 /* Hero Section */
