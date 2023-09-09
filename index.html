@@ -18,13 +18,41 @@
     <header class="grid-con">
         <h2 class="hidden">Header</h2>
 
-        <div class="l-col-start-2 l-col-end-5 box-left">
+        <nav id="hamburger-menu" class="grid-con">
+            <div class="col-start-4 col-end-5 m-col-start-12 m-col-end-13 l-col-start-12 l-col-end-13 xl-col-start-12 xl-col-end-13 box-right nav-icons">
+                <i id="hamburger-close" class="fa-solid fa-x"></i>
+            </div>
+
+            <div class="col-span-4 m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9 xl-col-start-5 xl-col-end-9 box-center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="col-start-1 col-end-4 m-col-start-2 m-col-end-6 l-col-start-2 l-col-end-5 xl-col-start-2 xl-col-end-5 box-left">
             <h3 class="hidden">Logo</h3>
             <img class="logo" src="images/logo.svg" alt="fanshawe logo">
         </div>
 
-        <nav class="l-col-start-7 l-col-end-12 box-right main-nav">
-            <h3 class="hidden">Nav</h3>
+        <nav class="mobile col-start-4 box-right">
+            <h3 class="hidden">Mobile Nav</h3>
+            <i id="hamburger-open" class="fa-solid fa-bars"></i>
+        </nav>
+
+        <nav class="tablet m-col-start-6 m-col-end-12 box-right main-nav">
+            <h3 class="hidden">Tablet Nav</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolios.html">Portfolios</a></li>
+            </ul>
+        </nav>
+
+        <nav class="desktop l-col-start-7 l-col-end-12 xl-col-start-7 xl-col-end-12 box-right main-nav">
+            <h3 class="hidden">Desktop Nav</h3>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -35,50 +63,65 @@
 
     <main>
         <section id="countdown-section" class="grid-con box-center txt-spacer">
-            <h2 id="countdown-heading" class="l-col-span-full heading">INDUSTRY NIGHT<br>AT FANSHAWE COLLEGE</h2>
+            <h2 class="col-span-full m-col-span-full l-col-span-full xl-col-span-full heading countdown-heading">INDUSTRY NIGHT<br>AT FANSHAWE COLLEGE</h2>
 
-            <p id="countdown-sub-heading" class="l-col-start-3 l-col-end-11 txt-spacer sub-heading">April 2024 - 
+            <p class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 txt-spacer sub-heading countdown-sub-heading">April 2024 - 
                 In-Person Event - Fanshawe LDA Building London</p>
 
-            <div id="timer" class="l-col-span-full spacer heading">
+            <div class="mobile col-span-full spacer heading timer">
+                <p>266<br><span>Days</span></p><br>
+                <p>10<br><span>Hours</span></p><br>
+                <p>35<br><span>Minutes</span></p><br>
+                <p>50<br><span>Seconds</span></p><br>
+            </div>
+
+            <div class="tablet m-col-span-full spacer heading timer">
                 <p>266<br><span>Days</span></p>
                 <p>10<br><span>Hours</span></p>
                 <p>35<br><span>Minutes</span></p>
                 <p>50<br><span>Seconds</span></p>
             </div>
 
-            <p class="l-col-start-3 l-col-end-11 txt-spacer">Connect, Explore, and Ignite Creativity in the School of Digital and Performing Arts!</p>
+            <div class="desktop l-col-span-full xl-col-span-full spacer heading timer">
+                <p>266<br><span>Days</span></p>
+                <p>10<br><span>Hours</span></p>
+                <p>35<br><span>Minutes</span></p>
+                <p>50<br><span>Seconds</span></p>
+            </div>
+
+            <p class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 txt-spacer">Connect, Explore, and Ignite Creativity in the School of Digital and Performing Arts!</p>
                 
-            <div class="l-col-start-5 l-col-end-9 spacer">
+            <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 spacer">
                 <a href="#" class="button-style">Register Today</a>
             </div>
         </section>
 
         <section class="spacer">
             <h2 class="hidden">Discover IDP Section</h2>
-            <article id="discover-heading" class="grid-con box-center">
-                <div class="l-col-start-1 l-col-end-5 box-right">
+            <article class="grid-con box-center discover-heading">
+                <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-5 xl-col-start-1 xl-col-end-5 box-right">
                     <img src="images/animated-logo.gif" alt="animated fanshawe logo">
                 </div>
 
-                <div id="discover-heading-text" class="l-col-start-5 l-col-end-12 box-left heading">
+                <div class="col-start-3 col-end-4 m-col-start-6 m-col-end-12 l-col-start-5 l-col-end-12 xl-col-start-5 xl-col-end-12 box-left heading discover-heading-text">
                     <h2><span>DISCOVER</span><br>INTERACTIVE MEDIA DESIGN</h2>
                 </div>
             </article>
 
-            <article id="discover-content" class="grid-con box-center">
+            <article class="grid-con box-center discover-content">
                 <h3 class="hidden">IDP Program Overview</h3>
-                <p class="l-col-start-3 l-col-end-11 txt-spacer">Cultivate interactive media design skills in our 
+                <p class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 txt-spacer">Cultivate interactive media design skills in our 
                     two-year program. Learn web design, coding, 3D animation, and more. Graduates excel in 
                     communication design, software development, and media production.</p>
 
-                <div class="l-col-start-5 l-col-end-9 spacer">
+                <div class="col-span-full m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11 xl-col-start-3 xl-col-end-11 spacer">
                     <a href="about.html" class="button-style">Learn More</a>
                 </div>
 
-                <article id="discover-gallery" class="l-col-span-full box-center spacer">
+                <article class="col-span-full m-col-span-full l-col-span-full xl-col-span-full box-center spacer discover-gallery">
                     <h3 class="hidden">IDP Program Gallery</h3>
                     <div>
+                        <p class="heading">KNOWLEDGE</p>
                         <img src="images/person-coding.png" alt="code">
                     </div>
                     <div>
@@ -92,10 +135,11 @@
                     </div>
                     <div>
                         <img src="images/people-analysing.png" alt="group analysing">
+                        <p class="heading">ANALYSIS</p>
                     </div>
                     <div>
-                        <img src="images/people-planning.png" alt="people planning on white board">
                         <p class="heading">CREATIVITY</p>
+                        <img src="images/people-planning.png" alt="people planning on white board">
                     </div>
                 </article>
             </article>
@@ -104,46 +148,74 @@
         <section id="testimonials-section" class="spacer">
             <h2 class="hidden">Client Testimonials Section</h2>
             <article class="grid-con">
-                <div class="l-col-start-3 l-col-end-11 box-center">
+                <div class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 box-center">
                     <h2 class="heading-alt">CLIENT TESTIMONIALS</h2>
                     <p class="txt-spacer">Unlocking innovation through collaboration: hear what companies 
                         say about their experience working with our Interactive Media Design students!</p>
                 </div>
 
-                <div class="l-col-start-1 l-col-end-5 box-right">
+                <div class="mobile col-span-full box-center txt-spacer">
+                    <img src="images/n-able-logo.png" alt="n-able logo">
+
+                    <h3 class="txt-spacer">N-able</h3>
+
+                    <p class="txt-spacer">"Collaborating with an Interactive Media Design student from Fanshawe 
+                        College in the coding field was a remarkable experience. Their coding expertise and creative 
+                        approach added tremendous value to our IT projects. We're excited about the potential of 
+                        working with such talented students in the tech industry."</p>
+
+                    <p class="txt-spacer">Carlos, N-able Specialist</p><br>
+                </div>
+
+                <div class="tablet m-col-start-1 m-col-end-5 box-right txt-spacer">
                     <img src="images/n-able-logo.png" alt="n-able logo">
                 </div>
 
-                <div id="testimonials-text" class="l-col-start-5 l-col-end-12 box-left">
+                <div class="desktop l-col-start-1 l-col-end-5 xl-col-start-1 xl-col-end-5 box-right txt-spacer">
+                    <img src="images/n-able-logo.png" alt="n-able logo">
+                </div>
+
+                <div class="tablet m-col-start-5 m-col-end-12 box-left testimonials-text">
                     <h3>N-able</h3>
 
                     <p class="txt-spacer">"Collaborating with an Interactive Media Design student from Fanshawe 
                         College in the coding field was a remarkable experience. Their coding expertise and creative 
                         approach added tremendous value to our IT projects. We're excited about the potential of 
-                        working with such talented students in the tech industry.</p>
+                        working with such talented students in the tech industry."</p>
+
+                    <p class="txt-spacer">Carlos, N-able Specialist</p><br>
+                </div>
+
+                <div class="desktop l-col-start-5 l-col-end-12 xl-col-start-5 xl-col-end-12 box-left testimonials-text">
+                    <h3>N-able</h3>
+
+                    <p class="txt-spacer">"Collaborating with an Interactive Media Design student from Fanshawe 
+                        College in the coding field was a remarkable experience. Their coding expertise and creative 
+                        approach added tremendous value to our IT projects. We're excited about the potential of 
+                        working with such talented students in the tech industry."</p>
 
                     <p class="txt-spacer">Carlos, N-able Specialist</p><br>
                 </div>
             </article>
 
-            <article id="folders" class="grid-con txt-spacer">
+            <article class="grid-con txt-spacer folders">
                 <h3 class="hidden">Company Logos</h3>
-                <div class="l-col-span-3 box-center">
+                <div class="col-span-full m-col-span-3 l-col-span-3 xl-col-span-3 box-center">
                     <img src="images/folder-open.png" alt="folder icon">
                     <p>N-able</p>
                 </div>
 
-                <div class="l-col-span-3 box-center">
+                <div class="col-span-full m-col-span-3 l-col-span-3 xl-col-span-3 box-center">
                     <img src="images/folder-closed.png" alt="folder icon">
                     <p>Clash Creative</p>
                 </div>
 
-                <div class="l-col-span-3 box-center">
+                <div class="col-span-full m-col-span-3 l-col-span-3 xl-col-span-3 box-center">
                     <img src="images/folder-closed.png" alt="folder icon">
                     <p>Cleio</p>
                 </div>
 
-                <div class="l-col-span-3 box-center">
+                <div class="col-span-full m-col-span-3 l-col-span-3 xl-col-span-3 box-center">
                     <img src="images/folder-closed.png" alt="folder icon">
                     <p>RedRhino</p>
                 </div>
@@ -153,17 +225,34 @@
         <footer class="grid-con spacer">
             <h2 class="hidden">Footer</h2>
 
-            <div class="l-col-start-2 l-col-end-6 box-left">
+            <div class="mobile col-span-full box-center">
                 <h3 class="hidden">Logo</h3>
                 <img class="logo" src="images/logo.svg" alt="fanshawe logo"><br>
-                <p id="footer-text" class="txt-spacer">School of Digital and Performing Arts<br><span>137 Dundas Street<br>
-                    London, Ontario, Canada, N6A 1E9</span></p><br>
+                <p class="txt-spacer footer-text">School of Digital and Performing Arts</p><br>
                 <div class="txt-spacer">
                     <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next" class="button-style">Join Us</a>
                 </div>
             </div>
 
-            <nav id="footer-nav" class="l-col-start-7 l-col-end-8 box-left">
+            <div class="tablet m-col-start-2 m-col-end-6 box-left">
+                <h3 class="hidden">Logo</h3>
+                <img class="logo" src="images/logo.svg" alt="fanshawe logo"><br>
+                <p class="txt-spacer footer-text">School of Digital and Performing Arts</p><br>
+                <div class="txt-spacer">
+                    <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next" class="button-style">Join Us</a>
+                </div>
+            </div>
+
+            <div class="desktop l-col-start-2 l-col-end-6 xl-col-start-2 xl-col-end-6 box-left">
+                <h3 class="hidden">Logo</h3>
+                <img class="logo" src="images/logo.svg" alt="fanshawe logo"><br>
+                <p class="txt-spacer footer-text">School of Digital and Performing Arts</p><br>
+                <div class="txt-spacer">
+                    <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next" class="button-style">Join Us</a>
+                </div>
+            </div>
+
+            <nav class="mobile col-span-2 box-center footer-nav">
                 <h3 class="hidden">Footer Nav</h3>
                 <p class="footer-heading">Site</p>
                 <ul>
@@ -173,7 +262,27 @@
                 </ul>
             </nav>
 
-            <div id="socials" class="l-col-start-10 l-col-end-12 box-left">
+            <nav class="tablet m-col-start-6 m-col-end-7 box-left footer-nav">
+                <h3 class="hidden">Footer Nav</h3>
+                <p class="footer-heading">Site</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                </ul>
+            </nav>
+
+            <nav class="desktop l-col-start-7 l-col-end-8 xl-col-start-7 xl-col-start-8 box-left footer-nav">
+                <h3 class="hidden">Footer Nav</h3>
+                <p class="footer-heading">Site</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolios.html">Portfolios</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile col-span-2 box-center socials">
                 <p class="footer-heading">Socials</p>
                 <ul>
                     <li><a href="https://www.twitter.com/fanshawesdpa"><i class="fa-brands fa-twitter"></i></a></li>
@@ -182,7 +291,25 @@
                 </ul>
             </div>
 
-            <hr class="l-col-start-2 l-col-end-12 spacer">
+            <div class="tablet m-col-start-9 m-col-end-12 box-left socials">
+                <p class="footer-heading">Socials</p>
+                <ul>
+                    <li><a href="https://www.twitter.com/fanshawesdpa"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/fanshawesdpa"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/FanshaweSDPA/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="desktop l-col-start-10 l-col-end-12 xl-col-start-10 xl-col-end-12 box-left socials">
+                <p class="footer-heading">Socials</p>
+                <ul>
+                    <li><a href="https://www.twitter.com/fanshawesdpa"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/fanshawesdpa"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/FanshaweSDPA/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                </ul>
+            </div>
+
+            <hr class="col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12 xl-col-start-2 xl-col-end-12 spacer">
         </footer>
 
     </main>
