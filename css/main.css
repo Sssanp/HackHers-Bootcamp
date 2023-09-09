@@ -58,7 +58,7 @@ p {
 }
 
 .spacer {
-    margin-top: 55px;
+    margin-top: 60px;
 }
 
 .txt-spacer {
@@ -253,8 +253,7 @@ footer hr {
     width: 80%;
     z-index: 9;
     margin-top: -150px;
-    padding-top: 150px;
-    padding-bottom: 50px;
+    padding-top: 170px;
 }
 
 #discover-content .button-style {
@@ -268,15 +267,18 @@ footer hr {
     color: white;
 }
 
+#discover-gallery {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
 #discover-gallery .heading {
     color: #952322;
 }
 
 /* Testimonials Section */
-
-#testimonials-section img {
-    border-radius: 40px;
-}
 
 #testimonials-text {
     margin-top: auto;
@@ -290,10 +292,6 @@ footer hr {
 
 #folders {
     width: 80%;
-}
-
-#folders img {
-    border-radius: 0;
 }
 
 #folders p {
