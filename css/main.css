@@ -5,6 +5,11 @@
     2.  Header Styles
     3.  Footer Styles
     4.  Home Page Styles
+        4.1.  Countdown Hero Section
+        4.2.  Discover IDP Section
+        4.3.  Client Testimonials Section
+    5.  About Page Styles
+        5.1.  Hero Section
 */
 
 
@@ -240,7 +245,7 @@ footer hr {
 #home-page-bg {
     background-color: #171717;
     color: white;
-    background-image: url(../images/red-circles-bg.png);
+    background-image: url(../images/home-hero-bg.png);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 140%
@@ -422,3 +427,34 @@ footer hr {
 }
 
 /* ---End of Home Page Styles--- */
+
+
+/* 5. ---About Page Styles--- */
+
+#about-page-bg {
+    background-color: #171717;
+    color: white;
+    background-image: url(../images/about-hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 40%
+}
+
+/* Hero Section */
+
+#about-hero-section .sub-heading {
+    font-size: 30px;
+}
+
+.discover-more p {
+    font-family: 'Karrera-Regular';
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.discover-more i {
+    font-size: 45px;
+    color: #952322;
+}
+
+/* ---End of About Page Styles--- */
