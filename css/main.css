@@ -767,8 +767,12 @@ footer hr {
 /* ---End of About Page Styles--- */
 
 
-/* 6. ---Portfolios Section --- */
+/* 6. ---Portfolios Page --- */
 
+#portfolios-page-bg {
+    background-color: #171717;
+    color: white;
+}
 
 /* Hero Section */
 
@@ -791,9 +795,9 @@ footer hr {
     margin: 0 auto;
 }
 
-
 .item {
     margin: 10px;
+    margin-bottom: 40px;
     padding: 20px;
     
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -808,7 +812,7 @@ footer hr {
 
 .item:hover {
     background: url('../images/box-hover.svg') no-repeat center center;
-
+    cursor: pointer;
 }
 
 .item img {
@@ -818,14 +822,14 @@ footer hr {
     margin-top: 50px;
 }
 
+.person-icon {
+    border-radius: 200px;
+}
+
 @media (max-width: 767px) {
     .item {
         flex-basis: calc(50% - 10px); /* 50% width for smaller screens */
     }
-}
-
-.person-icon {
-    border-radius: 200px;
 }
 
 @media screen and (min-width: 636px) {
@@ -840,25 +844,8 @@ footer hr {
     }
 }
 
-#porfolios-section .button-style {
-    position: 1rem;
-}
+/* ---End of Portfolios Page--- */
 
-
-
-
-/* .port-box h2 {
-    position: relative;
-}
-.port-box svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-} */
-
-
-/* ---End of Portfolios Section--- */
 
 /* 7. ---Scroll Button--- */
 
@@ -878,6 +865,7 @@ footer hr {
     cursor: pointer;
     z-index: 15;
   }
+
   #scroll-btn.show {
     opacity: 2;
     transition: opacity 1s, transform 1s;
