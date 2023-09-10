@@ -672,7 +672,7 @@ footer hr {
 
 /* IDP Project Workflow Section */
 
-#idp-workflow-section h3 {
+#idp-workflow-section h2 {
     font-size: 30px;
 }
 
@@ -680,10 +680,21 @@ footer hr {
     font-size: 25px;
 }
 
+#idp-workflow-section span {
+    border: 1px solid white;
+    background-color: #952322;
+    border-radius: 5px;
+    text-align: center;
+    padding: 16px 32px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
 .workflow-con {
     background-color: black;
     border: 2px solid white;
     border-top: 40px solid white;
+    padding: 40px;
 }
 
 /* ---End of About Page Styles--- */
