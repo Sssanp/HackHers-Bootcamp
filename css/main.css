@@ -17,6 +17,9 @@
         5.6.  Industry Night Itinerary Section
         5.7.  IDP Program Overview Section
         5.8.  IDP Project Workflow Section
+    6. Portfolios
+        6.1 Hero Section
+        6.2 Gallery Section
 */
 
 
@@ -698,3 +701,81 @@ footer hr {
 }
 
 /* ---End of About Page Styles--- */
+
+
+/* 6. ---Portfolios Section --- */
+
+
+/* Hero Section */
+
+.port-box {
+    border: 1px solid white;
+    box-shadow: 1px 4px 5px rgba(255, 255, 255, 0.344);
+    border-radius: 20px;
+
+    height: 300px;
+    padding-top: 120px;
+}
+
+/* Gallery Section */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.item {
+    margin: 10px;
+    padding: 20px;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    background: url('../images/box.svg') no-repeat center center;
+    background-size: auto; /* Adjust as needed */
+
+    height: 300px;
+    width: 300px;
+}
+
+.item:hover {
+    background: url('../images/box-hover.svg') no-repeat center center;
+
+}
+
+.item img {
+    height: auto;
+    border-radius: 200px;
+    width: 80px;
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    .item {
+        flex-basis: calc(50% - 10px); /* 50% width for smaller screens */
+    }
+}
+
+.person-icon {
+    border-radius: 200px;
+}
+
+
+
+
+/* .port-box h2 {
+    position: relative;
+}
+.port-box svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+} */
+
+
+/* ---End of Portfolios Section--- */
