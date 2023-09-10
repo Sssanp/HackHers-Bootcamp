@@ -50,6 +50,7 @@ img, embed, object, video, picture {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -302,7 +303,7 @@ footer hr {
 
 .timer p span {
     font-size: 20px;
-    font-family: 'Karrera-Regular';
+    font-family: 'Hanson-Bold';
     text-shadow: 1px 4px 5px rgba(255, 255, 255, 0.344);
 }
 
@@ -331,6 +332,37 @@ footer hr {
         margin-bottom: 0;
     }
 }
+
+#countdown ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Hanson-Bold';
+}
+
+#countdown ul li {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Karrera-Regular';
+}
+
+#countdown li span {
+    display: block;
+    font-size: 6rem;
+    font-family: 'Hanson-Bold';
+}
+
+#countdown li.separator {
+    margin: 0 10px;
+    font-size: 6rem;
+    line-height: 0.5;
+}
+
+#countdown li:first-of-type {
+    margin-right: 5rem;
+}
+
 
 /* Discover IDP Section */
 
@@ -762,6 +794,22 @@ footer hr {
 
 .person-icon {
     border-radius: 200px;
+}
+
+@media screen and (min-width: 636px) {
+    #porfolios-section .gallery {
+        padding-left: 200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #porfolios-section .gallery {
+        padding-left: 1px;
+    }
+}
+
+#porfolios-section .button-style {
+    position: 1rem;
 }
 
 
