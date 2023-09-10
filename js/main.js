@@ -1,5 +1,14 @@
 //Variables
 
+//Countdown
+
+var daysEl = document.getElementById('days')
+var hoursEl = document.getElementById('hours')
+var minutesEl = document.getElementById('minutes')
+var secondsEl = document.getElementById('seconds')
+
+//Folders
+
 const header = document.querySelector("header");
 
 const hamburgerOpenIcon = document.querySelector("#hamburger-open"),
@@ -44,6 +53,9 @@ let testimonialsArray = [
 
 //Functions
 
+
+
+// Header
 function toggleStickyHeader() {
     //Add the "sticky-header" class to the header when you scroll down and remove it when you're at the top of the page
     if (window.scrollY > 100) { 
@@ -52,6 +64,8 @@ function toggleStickyHeader() {
         header.classList.remove("sticky-header");
     }
 }
+
+//Hamburger Menu
 
 function openHamburgerMenu() {
     //Show the hamburger menu
@@ -62,6 +76,8 @@ function closeHamburgerMenu() {
     //Hide the hamburger menu
     hamburgerMenu.style.visibility = "hidden";
 }
+
+// Testimonials
 
 function changeTestimonial() {
     //Change the values to match those of the client that has been clicked on
@@ -91,6 +107,15 @@ function changeTestimonial() {
         }
     });
 }
+
+// Coundown
+
+function CoundownTimer() {
+
+    daysEl.innerText = 5
+}
+
+//
 
 //Event Listeners
 
