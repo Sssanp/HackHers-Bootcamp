@@ -1,5 +1,7 @@
 //Variables
 
+const header = document.querySelector("header");
+
 const hamburgerOpenIcon = document.querySelector("#hamburger-open"),
     hamburgerCloseIcon = document.querySelector("#hamburger-close"),
     hamburgerMenu = document.querySelector("#hamburger-menu");
@@ -42,6 +44,15 @@ let testimonialsArray = [
 
 //Functions
 
+function toggleStickyHeader() {
+    //Add the "sticky-header" class to the header when you scroll down and remove it when you're at the top of the page
+    if (window.scrollY > 100) { 
+        header.classList.add("sticky-header");
+    } else {
+        header.classList.remove("sticky-header");
+    }
+}
+
 function openHamburgerMenu() {
     //Show the hamburger menu
     hamburgerMenu.style.visibility = "visible";
@@ -53,7 +64,7 @@ function closeHamburgerMenu() {
 }
 
 function changeTestimonial() {
-    /*Change the values to match those of the client that has been clicked on*/
+    //Change the values to match those of the client that has been clicked on
     clientName.forEach(name => {
         name.textContent = testimonialsArray[this.dataset.testimonial].client;
     });
@@ -82,6 +93,8 @@ function changeTestimonial() {
 }
 
 //Event Listeners
+
+window.addEventListener("scroll", toggleStickyHeader);
 
 hamburgerOpenIcon.addEventListener("click", openHamburgerMenu);
 hamburgerCloseIcon.addEventListener("click", closeHamburgerMenu);
