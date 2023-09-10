@@ -117,6 +117,14 @@ header .logo {
     width: 100%;
 }
 
+.sticky-header {
+    position: sticky;
+    background-color: black;
+    z-index: 2;
+    top: 0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
 #hamburger-menu {
     visibility: hidden;
     background-color: #171717;
