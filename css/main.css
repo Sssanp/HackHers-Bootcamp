@@ -15,6 +15,7 @@
         5.4.  Industry Night Stats Section
         5.5.  Industry Night Info Section
         5.6.  Industry Night Itinerary Section
+        5.7.  IDP Program Overview Section
 */
 
 
@@ -120,7 +121,7 @@ header .logo {
 .sticky-header {
     position: sticky;
     background-color: black;
-    z-index: 2;
+    z-index: 10;
     top: 0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -487,6 +488,10 @@ footer hr {
 
 /* Hero Section */
 
+#about-hero-section .heading {
+    text-shadow: 1px 4px 5px rgba(255, 255, 255, 0.344);
+}
+
 #about-hero-section .sub-heading {
     font-size: 30px;
 }
@@ -586,6 +591,7 @@ footer hr {
     padding: 20px;
     position: relative;
     background-color: #171717;
+    text-shadow: 2px 5px 5px #952322;
 }
 
 .itinerary-text {
@@ -601,6 +607,66 @@ footer hr {
     border: none;
     height: 4px;
     background-color: white;
+}
+
+/* IDP Program Overview Section */
+
+.overview-con-1 {
+    background-color: black;
+    border: 2px solid white;
+    border-top: 40px solid white;
+    width: 100%;
+    z-index: 7;
+}
+
+.overview-con-2 {
+    background-color: black;
+    border: 2px solid white;
+    border-top: 40px solid white;
+    width: 80%;
+    padding: 45px;
+    z-index: 8;
+    position: relative;
+    margin-top: -360px;
+}
+
+.overview-con-2 h2 {
+    font-size: 25px;
+}
+
+.overview-con-3 {
+    background-color: black;
+    border: 2px solid white;
+    border-top: 40px solid white;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    margin-top: -450px;
+    margin-left: -80px;
+}
+
+@media screen and (max-width: 1199px) {
+    .overview-con-1, .overview-con-2, .overview-con-3 {
+        width: 100%;
+    }
+
+    .overview-con-2, .overview-con-3 {
+        margin-top: 0;
+        margin-left: 0;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .overview-con-1, .overview-con-2, .overview-con-3 {
+        width: 100%;
+    }
+
+    .overview-con-2, .overview-con-3 {
+        margin-top: 0;
+        margin-left: 0;
+        position: static;
+    }
 }
 
 /* ---End of About Page Styles--- */
