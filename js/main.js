@@ -119,7 +119,6 @@ function formatNumber(number) {
 // Run Function
 countdownTimer()
 
-
 // Header
 function toggleStickyHeader() {
     //Add the "sticky-header" class to the header when you scroll down and remove it when you're at the top of the page
@@ -172,9 +171,6 @@ function changeTestimonial() {
         }
     });
 }
-
-
-
 
 //Event Listeners
 
