@@ -51,6 +51,28 @@ let testimonialsArray = [
     },
 ]
 
+//scroll up button
+const createScrollButton = function () {
+    const scrollBtn = document.createElement("button");
+    scrollBtn.innerHTML = "&uarr;";
+    scrollBtn.setAttribute("id", "scroll-btn");
+    document.body.appendChild(scrollBtn);
+  
+    const showScrollButton = function () {
+      window.scrollY > window.innerHeight
+        ? scrollBtn.classList.add("show")
+        : scrollBtn.classList.remove("show");
+    };
+  
+    const scrollToTop = function () {
+      if (window.scrollY != 0) {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"  
+        });
+      }
+    };
+
 //Functions
 
 
@@ -127,3 +149,10 @@ hamburgerCloseIcon.addEventListener("click", closeHamburgerMenu);
 if (testimonialButtons) {
     testimonialButtons.forEach(button => button.addEventListener("click", changeTestimonial));
 }
+
+//Scroll up button
+window.addEventListener("scroll", showScrollButton);
+    scrollBtn.addEventListener("click", scrollToTop);
+  };
+  
+  createScrollButton();
