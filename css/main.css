@@ -20,6 +20,8 @@
     6. Portfolios
         6.1 Hero Section
         6.2 Gallery Section
+    7. Scroll Button
+    
 */
 
 
@@ -113,6 +115,9 @@ p {
     color: #171717;
     cursor: pointer;
 }
+
+
+
 
 /* ---End of General Styles--- */
 
@@ -827,3 +832,26 @@ footer hr {
 
 
 /* ---End of Portfolios Section--- */
+
+/* 7. ---Scroll Button--- */
+
+#scroll-btn {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #952322;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    border: 2px solid white;
+    border-radius: 50%;
+    font: bold 20px ubuntu;
+    transition: opacity 0.5s, transform 0.5s;
+    cursor: pointer;
+    z-index: 15;
+  }
+  #scroll-btn.show {
+    opacity: 2;
+    transition: opacity 1s, transform 1s;
+  }
