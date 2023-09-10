@@ -16,6 +16,7 @@
         5.5.  Industry Night Info Section
         5.6.  Industry Night Itinerary Section
         5.7.  IDP Program Overview Section
+        5.8.  IDP Project Workflow Section
 */
 
 
@@ -667,6 +668,22 @@ footer hr {
         margin-left: 0;
         position: static;
     }
+}
+
+/* IDP Project Workflow Section */
+
+#idp-workflow-section h3 {
+    font-size: 30px;
+}
+
+#idp-workflow-section .sub-heading {
+    font-size: 25px;
+}
+
+.workflow-con {
+    background-color: black;
+    border: 2px solid white;
+    border-top: 40px solid white;
 }
 
 /* ---End of About Page Styles--- */
