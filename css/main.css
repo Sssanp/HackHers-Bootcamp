@@ -488,4 +488,60 @@ footer hr {
     color: #952322;
 }
 
+/* Industry Night Overview Section */
+
+#industry-night-overview {
+    background-color: black;
+    border: 2px solid white;
+    border-top: 40px solid white;
+    width: 90%;
+    padding: 20px;
+}
+
+#industry-night-overview h2 {
+    font-size: 25px;
+}
+
+/* Informative Video Section */
+
+#informative-video video:hover {
+    cursor: pointer;
+}
+
+/* Industry Night Stats Section */
+
+#industry-night-stats {
+    background-image: linear-gradient(#95232325, #1c1b1b34);
+    padding-top: 40px;
+}
+
+#industry-night-stats .heading {
+    font-size: 30px;
+    line-height: 1.2em;
+}
+
+#industry-night-stats .divider {
+    border-right: 2px solid white;
+}
+
+@media screen and (max-width: 1199px) {
+    #industry-night-stats .heading {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #industry-night-stats .divider {
+        border-right: none;
+    }
+
+    #industry-night-stats hr {
+        border: none;
+        height: 2px;
+        background-color: white;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
 /* ---End of About Page Styles--- */
