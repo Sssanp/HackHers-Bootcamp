@@ -20,6 +20,8 @@
     6. Portfolios
         6.1 Hero Section
         6.2 Gallery Section
+    7. Scroll Button
+    
 */
 
 
@@ -114,6 +116,9 @@ p {
     cursor: pointer;
 }
 
+
+
+
 /* ---End of General Styles--- */
 
 
@@ -162,6 +167,7 @@ header .logo {
 
 #hamburger-open:hover, #hamburger-close:hover {
     cursor: pointer;
+    color: #952322;
 }
 
 .main-nav {
@@ -180,6 +186,12 @@ header .logo {
 .main-nav ul li:last-of-type {
     margin-right: 0;
 }
+
+/*change color of the text*/
+.box-center ul li:hover{
+    color: #952322;
+}
+
 
 .main-nav ul li:hover {
     padding-bottom: 2px;
@@ -206,6 +218,11 @@ footer {
     padding-bottom: 40px;
 }
 
+/*change color of footer */
+.footer-nav ul li:hover{
+    color: #952322;
+}
+
 .footer-nav ul li {
     list-style-type: none;
     margin-bottom: 25px;
@@ -223,10 +240,20 @@ footer {
     font-family: 'Hanson-Bold';
 }
 
+/*change color of heading */
+.footer-heading:hover{
+    color: white;
+}
 .socials ul li {
     display: inline;
     margin-right: 15px;
     font-size: 28px;
+}
+
+
+/*change color of icons */
+.socials ul li:hover{
+    color: #952322;
 }
 
 .socials ul li:last-of-type {
@@ -580,6 +607,11 @@ footer hr {
     border-right: 2px solid white;
 }
 
+/*change the color of the text */
+.discover-more p:hover{
+    color: #952322;
+}
+
 @media screen and (max-width: 1199px) {
     #industry-night-stats .heading {
         font-size: 20px;
@@ -827,3 +859,26 @@ footer hr {
 
 
 /* ---End of Portfolios Section--- */
+
+/* 7. ---Scroll Button--- */
+
+#scroll-btn {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #952322;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    border: 2px solid white;
+    border-radius: 50%;
+    font: bold 20px ubuntu;
+    transition: opacity 0.5s, transform 0.5s;
+    cursor: pointer;
+    z-index: 15;
+  }
+  #scroll-btn.show {
+    opacity: 2;
+    transition: opacity 1s, transform 1s;
+  }

@@ -35,6 +35,7 @@ Open index.html in your browser choice, then navigate through our website.
 
 * `Countdown`: Observe how much time is left until industry night.
 * `Open folder functionality`: Click on the folder to open another testimonial.
+* `Scroll up button`: Click to go to the top of the page.
 
 
 ## Credits
